@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBloom: Your Gateway to Adventure</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="nav-container">
+      <h1 class="title">TravelBloom</h1>
+      <ul class="nav-items">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <input
+        id="search-destination"
+        type="text"
+        placeholder="Enter a destination or keyword ..."
+        aria-label="search destination"
+      />
+    </nav>
+    <section id="home">
+      <div class="home-container">
+        <h2 class="home-heading">Explore Dream Destinations</h2>
+        <p class="home-content">
+          It encourages exploration of unfamilar territories embracing diverse
+          culture and landscapes, while pursuing the desired destination that
+          capitivates the heart and ignites the sense of wonder
+        </p>
+        <button id="book_now_btn">Book Now</button>
+      </div>
+    </section>
+    <section id="destinations">
+      <h2 class="section-title">Popular Destinations</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="countries">Countries</button>
+        <button class="filter-btn" data-filter="temples">Temples</button>
+        <button class="filter-btn" data-filter="beaches">Beaches</button>
+      </div>
+      <div class="destinations-grid" id="destinations-grid">
+        <!-- Destinations will be populated by JavaScript -->
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Us</h2>
+      <p>
+        At TravelBloom, we believe in the power of exploration. Our mission is
+        to connect travelers with their dream destinations, offering
+        personalized experiences that cater to individual preferences and
+        desires.
+      </p>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or need assistance, feel free to reach out to
+        our support team. We're here to help you plan your perfect getaway!
+      </p>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
