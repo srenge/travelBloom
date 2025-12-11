@@ -11,19 +11,37 @@
       <h1 class="title">TravelBloom</h1>
       <ul class="nav-items">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
-      <input
-        id="search-destination"
-        type="text"
-        placeholder="Enter a destination or keyword ..."
-        aria-label="search destination"
-      />
+      <div class="search-bar">
+        <input
+          id="search-destination"
+          type="text"
+          placeholder="Enter a destination or keyword ..."
+          aria-label="search destination"
+        />
+        <button id="search-btn" class="search-button">Search</button>
+        <button id="clear-btn" class="clear-button">Clear</button>
+      </div>
     </nav>
+    
+    <!-- Search Results Section -->
+    <section id="search-results" class="search-results-section" style="display: none;">
+      <div class="search-results-container">
+        <h2 class="search-results-title">Search Results</h2>
+        <div id="search-results-grid" class="search-results-grid">
+          <!-- Search results will be populated here -->
+        </div>
+      </div>
+    </section>
     <section id="home">
       <div class="home-container">
-        <h2 class="home-heading">Explore Dream Destinations</h2>
+        <h2 class="home-heading">
+          Explore<br>
+          Dream<br>
+          Destinations
+        </h2>
         <p class="home-content">
           It encourages exploration of unfamilar territories embracing diverse
           culture and landscapes, while pursuing the desired destination that
@@ -45,20 +63,105 @@
     </section>
 
     <section id="about">
-      <h2 class="section-title">About Us</h2>
-      <p>
-        At TravelBloom, we believe in the power of exploration. Our mission is
-        to connect travelers with their dream destinations, offering
-        personalized experiences that cater to individual preferences and
-        desires.
-      </p>
+      <div class="about-container">
+        <div class="about-content">
+          <h2 class="about-heading">ABOUT US</h2>
+          <p class="about-description">
+            Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to 
+            <strong>provide the best experience</strong> for people traveling to different destinations around the world. <br>
+            Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <strong>putting our customers first</strong> and <strong>working together</strong> to achieve our goals.<br>
+            Feel free to explore our website to learn more about what we offer!
+          </p>
+        </div>
+        
+        <div class="team-section">
+          <h2 class="team-heading">Our<br>Team</h2>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-icon">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="8" r="4" fill="white"/>
+                  <path d="M4 20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20V21H4V20Z" fill="white"/>
+                </svg>
+              </div>
+              <h3 class="team-name">John Doe</h3>
+              <p class="team-description">John is responsible for...</p>
+              <span class="team-role">CEO</span>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-icon">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="8" r="4" fill="white"/>
+                  <path d="M4 20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20V21H4V20Z" fill="white"/>
+                </svg>
+              </div>
+              <h3 class="team-name">Celina Thomas</h3>
+              <p class="team-description">Celina Thomas is responsible for...</p>
+              <span class="team-role">Team Lead</span>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-icon">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="8" r="4" fill="white"/>
+                  <path d="M4 20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20V21H4V20Z" fill="white"/>
+                </svg>
+              </div>
+              <h3 class="team-name">Mike Tysen</h3>
+              <p class="team-description">Mike Tysen is responsible for...</p>
+              <span class="team-role">Delivery Head</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact">
-      <h2>Contact Us</h2>
-      <p>
-        If you have any questions or need assistance, feel free to reach out to
-        our support team. We're here to help you plan your perfect getaway!
-      </p>
+      <div class="contact-container">
+        <div class="contact-heading-section">
+          <h2 class="contact-heading">CONTACT US</h2>
+          <p class="contact-subtitle">Get in touch</p>
+        </div>
+        
+        <div class="contact-form-section">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Your name" 
+                required
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Your email" 
+                required
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                placeholder="Your message" 
+                required
+              ></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
     </section>
     <script src="./index.js"></script>
   </body>
